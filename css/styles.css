@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* CUSTOM PROPERTIES */
+:root{
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color:  hsl(212, 45%, 89%);
+  --grayish-blue-color:  hsl(220, 15%, 55%);
+  --dark-blue-color:  hsl(218, 44%, 22%);
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --ff-outfit:  'Outfit', sans-serif;
+}
+
+/* RESET */
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--ff-outfit);
+  background-color: var(--light-gray-color);
+}
+
+img{
+  height: auto;
+  border-radius: 3rem;
+}
+
+/* CARD */
+.container{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card{
+  background-color: var(--white-color);
+  border-radius: 2rem;
+  width: 30rem;
+  height: 50rem;
+}
+
+.qr-code-image{
+  width: 30rem;
+  height: 30rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+}
+
+.card-text-group{
+  margin-inline: 3.4rem;
+  text-align: center;
+}
+
+.card-title{
+  font-size: 2rem;
+  color: var(--dark-blue-color);
+  padding-block-end: 1.5rem;
+}
+
+.card-text{
+  font-size: 1.5rem;
+  color: var(--grayish-blue-color);
+  max-width: 25ch;
+  margin-inline: auto;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 48em){
+  .card{
+    width: 35rem;
+    height: 51rem;
+  }
+
+  .qr-code-image{
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .card-title{
+    font-size: 2.2rem;
+
+  }
+}
